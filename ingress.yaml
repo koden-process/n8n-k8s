@@ -4,7 +4,8 @@ metadata:
   name: n8n-ingress
   namespace: n8n
   annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-prod" # Assurez-vous que le nom correspond à celui configuré
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod" 
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
