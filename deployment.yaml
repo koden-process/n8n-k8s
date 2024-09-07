@@ -41,6 +41,8 @@ spec:
           value: "n8n.koden.bzh"
         - name: N8N_PORT
           value: "5678"
+        - name: WEBHOOK_URL  
+          value: "https://n8n.koden.bzh"
       volumes:
       - name: n8n-data
         persistentVolumeClaim:
