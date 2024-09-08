@@ -25,6 +25,8 @@ spec:
           runAsUser: 1000  
           runAsGroup: 1000 
         env:
+        - name: TZ  
+          value: "Europe/Paris"
         - name: N8N_BASIC_AUTH_ACTIVE
           value: "true"
         - name: N8N_BASIC_AUTH_USER
