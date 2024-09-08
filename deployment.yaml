@@ -27,6 +27,8 @@ spec:
         env:
         - name: TZ  
           value: "Europe/Paris"
+        - name: GENERIC_TIMEZONE  
+          value: "Europe/Paris"
         - name: N8N_BASIC_AUTH_ACTIVE
           value: "true"
         - name: N8N_BASIC_AUTH_USER
