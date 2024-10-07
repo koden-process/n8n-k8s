@@ -51,3 +51,5 @@ spec:
       - name: n8n-data
         persistentVolumeClaim:
           claimName: n8n-pvc
+  strategy:
+    type: Recreate
