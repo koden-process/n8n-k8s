@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: n8n
-        image: n8nio/n8n:1.72.1
+        image: n8nio/n8n:1.85.2
         ports:
         - containerPort: 5678
         volumeMounts:
@@ -47,6 +47,8 @@ spec:
           value: "5678"
         - name: WEBHOOK_URL  
           value: "https://n8n.koden.bzh"
+        - name: N8N_PAYLOAD_SIZE_MAX
+          value: "50MB"
       volumes:
       - name: n8n-data
         persistentVolumeClaim:
